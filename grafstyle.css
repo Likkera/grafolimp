@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  }
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #17255E;
+    padding: 20px 20px 20px 50px;
+    }
+  .name_all {
+    display: block;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 300%;
+    font-weight: 600;
+    }
+  #yourhelper {
+    display: block;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 130%;
+    }
+  .text {
+    color: white;
+    }
+  #menu {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 3%
+  }
+  a {
+    text-decoration: none;
+  }
+  #up {
+    display: flex inline-block;
+    flex-direction: column;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center; 
+    position: fixed;
+    top: 65px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    min-height: 90%;
+    margin-top: 140px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #17255E;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 1;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 130%;
+  }
+  .menu__item:hover {
+    background-color: #0F183B;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: .25s;
+  }
+  .menu__box {
+    transition-duration: .25s;
+  }
+  .menu__item {
+    transition-duration: .25s;
+  }
+main {
+    padding: 20px;
+  }
+  #ikonka {
+    border: 3px groove #17255E;
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+    display: inline-block;
+  }
+  #but_redact {
+    position: absolute;
+    right: 20px;
+    background-color: #d0e3f7;
+    border: 2px double white;
+    border-radius: 5px;
+    font-size: 130%;
+  }
+  #FIO {
+    position: absolute;
+    display: inline-block;
+    color: #0F183B;
+    font-size: 180%;
+  }
+  #celendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #cel_img {
+    width: 50%;
+    height: auto;
+  }
+  #olimp_lk {
+    font-size: 250%;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .science {
+    height: 30px;
+    width: auto;
+    margin-right: 3px;
+  }
+  .olimp {
+    margin: 3%;
+    padding: 2%;
+  }
+  .olimp_another {
+    padding: 2%;
+    position: relative;
+  }
+  .time {
+    display: inline-block;
+    margin: 3px;
+    font-size: 130%;
+  }
+  .name_olimp {
+    color: #17255E;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 200%;
+    margin: 0;
+  }
+  .for_class {
+    font-size: 23px;
+    margin: 0;
+  }
+  .subject {
+    display: inline-block;
+    margin: 0;
+    margin-left: 1%;
+    position: absolute;
+    top: 12.5%;
+    font-size: 115%;
+  }
+  .part {
+    margin: 0;
+    color: #294293;
+    font-size: 150%;
+  }
+  .takepart {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 37%;
+  }
+footer {
+    background-color: #17255E;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    display: sticky;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    font-size: 130%;
+    z-index: 0;
+  }
+  #footer {
+    display: inline-block;
+  }
+  .footer_items {
+   margin: 0px;
+    color: white;
+  }
