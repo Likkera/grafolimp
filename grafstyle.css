@@ -182,15 +182,28 @@ main {
     font-size: 200%;
     margin: 0;
   }
+  .div_science {
+    display: flex;
+    align-items: center;
+  }
   .for_class {
     font-size: 23px;
     margin: 0;
   }
   .subject {
     display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 140%;
     margin: 0;
-    margin-left: 1%;
-    position: absolute;
+    margin-left: 2px;
+    margin-right: 4px;
+    top: 12.5%;
+    font-size: 115%;
+  }
+  .lot_subject {
+    display: inline-block;
+    margin: 0;
+    margin-left: 10px;
     top: 12.5%;
     font-size: 115%;
   }
@@ -198,13 +211,6 @@ main {
     margin: 0;
     color: #294293;
     font-size: 150%;
-  }
-  .takepart {
-    width: 50px;
-    height: auto;
-    position: absolute;
-    right: 20px;
-    top: 37%;
   }
 footer {
     background-color: #17255E;
