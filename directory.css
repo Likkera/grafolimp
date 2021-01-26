@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  }
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #17255E;
+    padding: 20px 20px 20px 50px;
+    }
+  .name_all {
+    display: block;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 300%;
+    font-weight: 600;
+    }
+  #yourhelper {
+    display: block;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 130%;
+    }
+  .text {
+    color: white;
+    }
+  #menu {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 3%
+  }
+  a {
+    text-decoration: none;
+  }
+  #up {
+    display: flex inline-block;
+    flex-direction: column;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center; 
+    position: fixed;
+    top: 65px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    min-height: 90%;
+    margin-top: 140px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #17255E;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 1;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 130%;
+  }
+  .menu__item:hover {
+    background-color: #0F183B;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: .25s;
+  }
+  .menu__box {
+    transition-duration: .25s;
+  }
+  .menu__item {
+    transition-duration: .25s;
+  }
+main {
+    padding: 20px;
+  }
+  .science {
+    height: 30px;
+    width: auto;
+    margin-right: 3px;
+  }
+  .olimp_another {
+    display: flex;
+    flex-flow: column;
+    padding: 2%;
+  }
+  .time {
+    display: inline-block;
+    margin: 3px;
+    font-size: 130%;
+  }
+  .name_olimp {
+    display: inline-block;
+    color: #17255E;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 235%;
+    margin: 0;
+  }
+  .div_science {
+    display: flex;
+    align-items: center;
+  }
+  .for_class {
+    display: inline-block;
+    font-size: 170%;
+    margin: 0;
+  }
+  .subject {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 140%;
+    margin: 0;
+    margin-left: 2px;
+    margin-right: 10px;
+    top: 12.5%;
+    font-size: 115%;
+  }
+  .lot_subject {
+    display: inline-block;
+    margin: 0;
+    margin-left: 4px;
+    top: 12.5%;
+    font-size: 115%;
+  }
+  .part {
+    display: inline-block;
+    margin: 0;
+    color: #294293;
+    font-size: 170%;
+  }
+footer {
+    background-color: #17255E;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    display: sticky;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    font-size: 130%;
+    z-index: 0;
+  }
+  #footer {
+    display: inline-block;
+  }
+  .footer_items {
+   margin: 0px;
+    color: white;
+  }
